@@ -20,5 +20,10 @@
                     </form>
         </c:forEach>
         </div>
+        <div>
+        <form action="${pageContext.request.contextPath}/canciones/formulario/agregar" method="get">
+            <button type="submit">Agregar Canción</button>
+        </form>
+        </div>
     </body>
 </html>

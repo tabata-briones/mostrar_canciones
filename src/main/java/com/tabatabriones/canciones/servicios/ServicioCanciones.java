@@ -24,4 +24,8 @@ public class ServicioCanciones {
     public Cancion obtenerUno(Long idLibro){
         return this.repositorioCanciones.findById(idLibro).orElse(null);
     }
+
+    public Cancion agregarCancion(Cancion cancion) {
+       	return this.repositorioCanciones.save(cancion);
+   	}
 }
